@@ -22,6 +22,13 @@ class LanguageFactory extends \Joomla\Language\LanguageFactory {
 	private $defaultLanguage = 'fr-FR';
 
 	/**
+	 * Path to the directory containing the application's language folder
+	 *
+	 * @var    string
+	 */
+	private $languageDirectory = JPATH_ROOT;
+
+	/**
 	 * Get the application's default language
 	 *
 	 * @return  string
@@ -29,6 +36,11 @@ class LanguageFactory extends \Joomla\Language\LanguageFactory {
 	public function getDefaultLanguage() {
 
 		return $this->defaultLanguage;
+	}
+
+	public function getLanguageDirectory() {
+
+		return $this->languageDirectory;
 	}
 
 }
